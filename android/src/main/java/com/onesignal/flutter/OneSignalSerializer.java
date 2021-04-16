@@ -143,7 +143,7 @@ class OneSignalSerializer {
         if (notification.getCollapseId() != null)
             hash.put("collapseId", notification.getCollapseId());
         hash.put("priority", notification.getPriority());
-        if (notification.getAdditionalData() != null) 
+        if (notification.getAdditionalData() != null)
             hash.put("additionalData", convertJSONObjectToHashMap(notification.getAdditionalData()));
 
         if (notification.getActionButtons() != null) {
